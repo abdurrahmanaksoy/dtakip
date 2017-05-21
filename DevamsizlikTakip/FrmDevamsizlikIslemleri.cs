@@ -33,6 +33,11 @@ namespace DevamsizlikTakip
             Islemler.OgretmenSil(dersId);
         }
 
+        private void cmbOgrAd_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
       
     }

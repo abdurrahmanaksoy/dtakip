@@ -21,5 +21,10 @@ namespace DevamsizlikTakip
         {
             dataGridView1.DataSource = Islemler.GetSinifListesi();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

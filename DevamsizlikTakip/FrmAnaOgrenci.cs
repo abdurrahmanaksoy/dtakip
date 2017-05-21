@@ -12,6 +12,7 @@ namespace DevamsizlikTakip
 {
     public partial class FrmAnaOgrenci : Form
     {
+        public static int OgrenciId;
         public FrmAnaOgrenci()
         {
             InitializeComponent();

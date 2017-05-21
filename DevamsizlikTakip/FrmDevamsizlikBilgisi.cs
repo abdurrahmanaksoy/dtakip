@@ -12,9 +12,12 @@ namespace DevamsizlikTakip
 {
     public partial class FrmDevamsizlikBilgisi : Form
     {
+        public int ogrNo;
         public FrmDevamsizlikBilgisi()
         {
             InitializeComponent();
+            this.ogrNo = FrmAnaOgrenci.OgrenciId;
+            dataGridView1.DataSource = Islemler.DevamsizlikBilgisiGetir(this.ogrNo);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DevamsizlikTakip
 {
@@ -26,7 +27,7 @@ namespace DevamsizlikTakip
 
         public static bool OgrenciGirisYap(string tc, int ogrNo)
         {
-            string sql = "select * from tblOgrenci where TcNo=@TcNo and OgrNo=@OgrNo";
+            string sql = "select * from tblOgrenci where TcNo=@TcNo and OgrenciId=@OgrNo";
             cmd.Parameters.Clear();
             cmd.Parameters.Add("@TcNo", SqlDbType.VarChar).Value = tc;
             cmd.Parameters.Add("@OgrNo", SqlDbType.Int).Value = ogrNo;
@@ -117,22 +118,33 @@ namespace DevamsizlikTakip
             adp.Fill(dt);
             return dt;
         }
-        internal static void DevamsizlikEkle(string ogrenciAdi)
+        internal static void DevamsizlikEkle(int ogrenciId, DateTime dateTime)
         {
-
-            string sql = "INSERT INTO tblDevamsizlik(ogrenciAdi) Values(@ogrenciAdi)";
+            string sql = "INSERT INTO tblDevamsizlik(OgrenciId,OgrenciDevamsizlikTarihi) Values(@ogrenciId,@dateTime)";
             cmd.Parameters.Clear();
-            cmd.Parameters.Add("@ogrenciAdi", SqlDbType.VarChar).Value = ogrenciAdi;
+            cmd.Parameters.Add("@ogrenciId", SqlDbType.Int).Value = ogrenciId;
+            cmd.Parameters.Add("@dateTime", SqlDbType.DateTime).Value = dateTime;
             cmd.CommandText = sql;
             cmd.ExecuteNonQuery();
         }
         internal static void DevamsizlikSil(int ogrenciId)
         {
-            string sql = "Delete From tblDevamsizlik Where ogrenciId=@ogrenciId";
+            string sql = "Delete From tblDevamsizlik Where OgrenciId=@ogrenciId";
             cmd.Parameters.Clear();
             cmd.Parameters.Add("@ogrenciId", SqlDbType.Int).Value = ogrenciId;
             cmd.CommandText = sql;
             cmd.ExecuteNonQuery();
+        }
+        internal static DataTable DevamsizlikBilgisiGetir(int ogrenciId)
+        {
+            string sql = "SELECT tblOgrenci.Ad,tblOgrenci.Soyad,tblDevamsizlik.OgrenciDevamsizlikTarihi FROM tblDevamsizlik"
+            + " RIGHT OUTER JOIN tblOgrenci ON tblOgrenci.OgrenciId=tblDevamsizlik.OgrenciId WHERE tblDevamsizlik.OgrenciId=@ogrenciId";
+            cmd.Parameters.Clear();
+            cmd.Parameters.Add("@ogrenciId", SqlDbType.Int).Value = ogrenciId;
+            cmd.CommandText = sql;
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            return dt;
         }
         internal static DataTable GetOgrenciGetir()
         {
@@ -145,7 +157,7 @@ namespace DevamsizlikTakip
         }
         internal static void OgrenciEkle(string ad, string soyad, int sinifId)
         {
-            string sql = "INSERT INTO tblOgrenci(ad,soyad,sinifId) Values(@ad,@soyad@sinifId)";
+            string sql = "INSERT INTO tblOgrenci(ad,soyad,sinifId) Values(@ad,@soyad,@sinifId)";
             cmd.Parameters.Clear();
             cmd.Parameters.Add("@ad", SqlDbType.VarChar).Value = ad;
             cmd.Parameters.Add("@soyad", SqlDbType.VarChar).Value = soyad;
@@ -164,8 +176,10 @@ namespace DevamsizlikTakip
         }
         internal static DataTable GetSinifListesi()
         {
-            string sql = "SELECT *from tblSinif";
+            int ogrNo = FrmAnaOgrenci.OgrenciId;
+            string sql = "SELECT * FROM tblOgrenci WHERE SinifID IN(SELECT SinifID FROM tblOgrenci WHERE OgrenciId=@ogrNo)";
             cmd.Parameters.Clear();
+            cmd.Parameters.Add("@ogrNo", SqlDbType.Int).Value = ogrNo;
             cmd.CommandText = sql;
             DataTable dt = new DataTable();
             adp.Fill(dt);
@@ -230,7 +244,7 @@ namespace DevamsizlikTakip
             cmd.ExecuteNonQuery();
         }
 
-        internal static void DevamsizlikEkle(int p, DateTime dateTime)
+        /*internal static void DevamsizlikEkle(int p, DateTime dateTime)
         {
             string sql = "INSERT INTO tblDersProgrami(sinifId) Values(@sinifId)";
             cmd.Parameters.Clear();
@@ -238,7 +252,7 @@ namespace DevamsizlikTakip
             cmd.Parameters.Add("@sinifId", SqlDbType.VarChar).Value = p;
             cmd.CommandText = sql;
             cmd.ExecuteNonQuery();
-        }
+        }*/
        
 
         internal static void OgretmenSil(int sinifId)

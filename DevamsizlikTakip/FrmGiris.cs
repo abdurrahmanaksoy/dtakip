@@ -24,6 +24,7 @@ namespace DevamsizlikTakip
             int ogrNo = Convert.ToInt32(txtOgrNo.Text);
             if (Islemler.OgrenciGirisYap(txtOgrTc.Text, ogrNo))
             {
+                FrmAnaOgrenci.OgrenciId = ogrNo;
                 FrmAnaOgrenci frm = new FrmAnaOgrenci();
                 frm.Show();
                 Hide();

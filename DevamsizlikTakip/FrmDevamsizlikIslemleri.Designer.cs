@@ -93,6 +93,7 @@
             this.cmbOgrAd.Name = "cmbOgrAd";
             this.cmbOgrAd.Size = new System.Drawing.Size(167, 21);
             this.cmbOgrAd.TabIndex = 17;
+            this.cmbOgrAd.SelectedIndexChanged += new System.EventHandler(this.cmbOgrAd_SelectedIndexChanged);
             // 
             // dateTimePicker1
             // 
