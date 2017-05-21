@@ -37,3 +37,6 @@ C:\Users\Abdurrahman\Desktop\Yedek\3.5.17\DevamsizlikTakip\obj\Debug\Devamsizlik
 C:\Users\Abdurrahman\Desktop\Yedek\3.5.17\DevamsizlikTakip\obj\Debug\DevamsizlikTakip.csproj.GenerateResource.Cache
 C:\Users\Abdurrahman\Desktop\Yedek\3.5.17\DevamsizlikTakip\bin\Debug\DevamsizlikTakip.exe
 C:\Users\Abdurrahman\Desktop\Yedek\3.5.17\DevamsizlikTakip\bin\Debug\DevamsizlikTakip.pdb
+C:\Users\Abdurrahman\Desktop\dtakip\DevamsizlikTakip\bin\Debug\DevamsizlikTakip.exe.config
+C:\Users\Abdurrahman\Desktop\dtakip\DevamsizlikTakip\obj\Debug\DevamsizlikTakip.exe
+C:\Users\Abdurrahman\Desktop\dtakip\DevamsizlikTakip\obj\Debug\DevamsizlikTakip.pdb

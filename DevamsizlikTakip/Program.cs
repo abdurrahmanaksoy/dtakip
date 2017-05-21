@@ -13,7 +13,7 @@ namespace DevamsizlikTakip
         /// </summary>
         [STAThread]
         static void Main()
-        {
+        { /* örnek bir değişiklik*/
             Islemler.Olustur();
 
             Application.EnableVisualStyles();
