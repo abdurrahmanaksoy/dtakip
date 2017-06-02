@@ -35,8 +35,6 @@
             this.devamsızlıkBilgisiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sınıfListesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sınıfListesiToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.dersProgramıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,8 +44,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.alınanDerslerToolStripMenuItem,
             this.devamsızlıkToolStripMenuItem,
-            this.sınıfListesiToolStripMenuItem,
-            this.dersProgramıToolStripMenuItem});
+            this.sınıfListesiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(537, 24);
@@ -95,23 +92,9 @@
             // sınıfListesiToolStripMenuItem1
             // 
             this.sınıfListesiToolStripMenuItem1.Name = "sınıfListesiToolStripMenuItem1";
-            this.sınıfListesiToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.sınıfListesiToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
             this.sınıfListesiToolStripMenuItem1.Text = "Sınıf Listesi";
             this.sınıfListesiToolStripMenuItem1.Click += new System.EventHandler(this.sınıfListesiToolStripMenuItem1_Click);
-            // 
-            // dersProgramıToolStripMenuItem
-            // 
-            this.dersProgramıToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dToolStripMenuItem});
-            this.dersProgramıToolStripMenuItem.Name = "dersProgramıToolStripMenuItem";
-            this.dersProgramıToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
-            this.dersProgramıToolStripMenuItem.Text = "Ders Programı";
-            // 
-            // dToolStripMenuItem
-            // 
-            this.dToolStripMenuItem.Name = "dToolStripMenuItem";
-            this.dToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.dToolStripMenuItem.Text = "Ders Programı";
             // 
             // FrmAnaOgrenci
             // 
@@ -139,7 +122,5 @@
         private System.Windows.Forms.ToolStripMenuItem devamsızlıkBilgisiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sınıfListesiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sınıfListesiToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem dersProgramıToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dToolStripMenuItem;
     }
 }

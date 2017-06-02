@@ -42,7 +42,7 @@
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(630, 289);
+            this.dataGridView1.Size = new System.Drawing.Size(626, 289);
             this.dataGridView1.TabIndex = 1;
             // 
             // label3
@@ -60,7 +60,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(630, 289);
+            this.ClientSize = new System.Drawing.Size(626, 289);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Name = "FrmAlinanDersler";

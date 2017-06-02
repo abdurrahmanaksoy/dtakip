@@ -18,12 +18,14 @@ namespace DevamsizlikTakip
             cmbOgrAd.DataSource = Islemler.GetOgrenciGetir();
             cmbOgrAd.DisplayMember = "Ad";
             cmbOgrAd.ValueMember = "OgrenciId";
+
+            dataGridView1.DataSource = Islemler.GetDevamsizlikBilgisi();
         }
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
            Islemler.DevamsizlikEkle(Convert.ToInt32(cmbOgrAd.SelectedValue), dateTimePicker1.Value);
-           
+           MessageBox.Show("Devamsızlık Eklendi.");
         }
 
         private void btnSil_Click(object sender, EventArgs e)

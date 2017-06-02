@@ -11,8 +11,7 @@ using System.Windows.Forms;
 namespace DevamsizlikTakip
 {
     public partial class FrmAnaOgrenci : Form
-    {
-        public static int OgrenciId;
+    { 
         public FrmAnaOgrenci()
         {
             InitializeComponent();
@@ -45,5 +44,7 @@ namespace DevamsizlikTakip
             frm.MdiParent = this;
             frm.Show();
         }
+
+      
     }
 }

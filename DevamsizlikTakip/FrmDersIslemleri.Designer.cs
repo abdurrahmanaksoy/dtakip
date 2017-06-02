@@ -32,9 +32,7 @@
             this.brnDersSil = new System.Windows.Forms.Button();
             this.btnDersEkle = new System.Windows.Forms.Button();
             this.txtDersAdi = new System.Windows.Forms.TextBox();
-            this.txtDersId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -46,18 +44,17 @@
             this.panel2.Controls.Add(this.brnDersSil);
             this.panel2.Controls.Add(this.btnDersEkle);
             this.panel2.Controls.Add(this.txtDersAdi);
-            this.panel2.Controls.Add(this.txtDersId);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(737, 40);
+            this.panel2.Size = new System.Drawing.Size(738, 40);
             this.panel2.TabIndex = 1;
             // 
             // brnDersSil
             // 
             this.brnDersSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.brnDersSil.Location = new System.Drawing.Point(584, 5);
+            this.brnDersSil.Location = new System.Drawing.Point(366, 5);
             this.brnDersSil.Name = "brnDersSil";
             this.brnDersSil.Size = new System.Drawing.Size(154, 27);
             this.brnDersSil.TabIndex = 11;
@@ -68,7 +65,7 @@
             // btnDersEkle
             // 
             this.btnDersEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDersEkle.Location = new System.Drawing.Point(430, 5);
+            this.btnDersEkle.Location = new System.Drawing.Point(212, 5);
             this.btnDersEkle.Name = "btnDersEkle";
             this.btnDersEkle.Size = new System.Drawing.Size(154, 27);
             this.btnDersEkle.TabIndex = 6;
@@ -78,37 +75,20 @@
             // 
             // txtDersAdi
             // 
-            this.txtDersAdi.Location = new System.Drawing.Point(324, 9);
+            this.txtDersAdi.Location = new System.Drawing.Point(106, 9);
             this.txtDersAdi.Name = "txtDersAdi";
             this.txtDersAdi.Size = new System.Drawing.Size(100, 20);
             this.txtDersAdi.TabIndex = 5;
-            // 
-            // txtDersId
-            // 
-            this.txtDersId.Location = new System.Drawing.Point(114, 9);
-            this.txtDersId.Name = "txtDersId";
-            this.txtDersId.Size = new System.Drawing.Size(100, 20);
-            this.txtDersId.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(230, 9);
+            this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ders Adı";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(5, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ders İd";
             // 
             // dataGridView1
             // 
@@ -143,9 +123,7 @@
         private System.Windows.Forms.Button brnDersSil;
         private System.Windows.Forms.Button btnDersEkle;
         private System.Windows.Forms.TextBox txtDersAdi;
-        private System.Windows.Forms.TextBox txtDersId;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

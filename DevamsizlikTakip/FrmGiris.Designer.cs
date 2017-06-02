@@ -87,7 +87,7 @@
             this.txtOgrNo.Name = "txtOgrNo";
             this.txtOgrNo.Size = new System.Drawing.Size(92, 20);
             this.txtOgrNo.TabIndex = 2;
-            this.txtOgrNo.Text = "1";
+            this.txtOgrNo.Text = "2";
             // 
             // label2
             // 

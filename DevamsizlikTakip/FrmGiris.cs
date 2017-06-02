@@ -24,11 +24,12 @@ namespace DevamsizlikTakip
             int ogrNo = Convert.ToInt32(txtOgrNo.Text);
             if (Islemler.OgrenciGirisYap(txtOgrTc.Text, ogrNo))
             {
-                FrmAnaOgrenci.OgrenciId = ogrNo;
+                Veriler.OgrenciID = ogrNo;
                 FrmAnaOgrenci frm = new FrmAnaOgrenci();
                 frm.Show();
                 Hide();
             }
+            else MessageBox.Show("Hatalı Bilgiler Girdiniz.");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -42,7 +43,9 @@ namespace DevamsizlikTakip
             }
 
         }
-         
+
+        
+      
 
     }
 }

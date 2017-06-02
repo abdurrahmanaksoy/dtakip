@@ -42,7 +42,6 @@ C:\Users\Abdurrahman\Desktop\dtakip\DevamsizlikTakip\obj\Debug\DevamsizlikTakip.
 C:\Users\Abdurrahman\Desktop\dtakip\DevamsizlikTakip\obj\Debug\DevamsizlikTakip.pdb
 C:\Users\Abdurrahman\Desktop\dtakip\DevamsizlikTakip\bin\Debug\DevamsizlikTakip.exe
 C:\Users\Abdurrahman\Desktop\dtakip\DevamsizlikTakip\bin\Debug\DevamsizlikTakip.pdb
-C:\Users\Abdurrahman\Desktop\dtakip\DevamsizlikTakip\obj\Debug\DevamsizlikTakip.csprojResolveAssemblyReference.cache
 C:\Users\Abdurrahman\Desktop\dtakip\DevamsizlikTakip\obj\Debug\DevamsizlikTakip.FrmAlinanDersler.resources
 C:\Users\Abdurrahman\Desktop\dtakip\DevamsizlikTakip\obj\Debug\DevamsizlikTakip.FrmAnaOgrenci.resources
 C:\Users\Abdurrahman\Desktop\dtakip\DevamsizlikTakip\obj\Debug\DevamsizlikTakip.FrmAnaPersonel.resources
